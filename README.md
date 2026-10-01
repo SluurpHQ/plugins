@@ -48,4 +48,10 @@ sluurp plugin registry add your-org/sluurp-plugins
 sluurp plugin add your-org/sluurp-plugins:my-plugin
 ```
 
+A registry is a GitHub `owner/repo`, any git address (`git@gitlab.com:your-org/plugins.git`, `ssh://…`, `https://….git`), or a folder.
+
+A private registry is read with the `git` installed on the machine, with whatever access it already has: an SSH key, a credential manager, `gh auth login`, a deploy key. Where git can't be used, give a token: `SLUURP_PLUGIN_TOKENS=your-org/sluurp-plugins=…` (or `your-org=…`), or `GITHUB_TOKEN`.
+
 A server can narrow the registries its apps may use: `SLUURP_PLUGIN_REGISTRIES=your-org/sluurp-plugins`. Sluurp's own registry is always allowed.
+
+More in the docs: https://sluurp.org/docs/plugins
