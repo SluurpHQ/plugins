@@ -71,6 +71,8 @@ func main() {
 			return true, nil
 		},
 		"set": func(c *sluurp.Call) (any, error) {
+			// Printed as anyone debugging would: it goes to the server's log, not between the frames.
+			fmt.Println("kv: set", c.Params)
 			mu.Lock()
 			defer mu.Unlock()
 			t, err := txOf(c)

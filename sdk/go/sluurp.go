@@ -69,10 +69,17 @@ func Event(name string, data any) {
 	send(map[string]any{"event": name, "data": data})
 }
 
+// The protocol's own stdout, kept before anything can print to it.
 var out = struct {
 	sync.Mutex
 	w *bufio.Writer
 }{w: bufio.NewWriter(os.Stdout)}
+
+// A plugin's own printing (fmt.Println, log) goes to stderr, which the server logs: on stdout it
+// would land between frames and break them.
+func init() {
+	os.Stdout = os.Stderr
+}
 
 func send(message any) {
 	b, err := enc.Marshal(message)
