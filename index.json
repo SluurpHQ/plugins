@@ -1,1 +1,17 @@
-{ "plugins": {} }
+{
+  "plugins": {
+    "peppol": {
+      "description": "Invoices as e-invoices in the Peppol BIS Billing 3.0 format (UBL), for issuers in countries that use Peppol.",
+      "versions": {
+        "1.0.0": {
+          "sluurp": ">=0.2.0",
+          "requires": {},
+          "main": "peppol.ts",
+          "files": {
+            "peppol.ts": "99c2bb064dcc36c63d74598377b2b8fb79cb505384bd3bbe6743adf565a9f8be"
+          }
+        }
+      }
+    }
+  }
+}
