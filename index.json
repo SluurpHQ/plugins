@@ -84,6 +84,18 @@
             "bin/linux-aarch64/oracle": "f90911d3f64a7367255805cea9d6dbfd20ab661c20c982becd05cb811acd86fe"
           },
           "run": "bin/{platform}/oracle"
+        },
+        "1.0.1": {
+          "sluurp": ">=0.2.0",
+          "requires": {},
+          "main": "",
+          "files": {
+            "bin/windows-x86_64/oracle.exe": "dc4bda01b2ec4dec72870f782e5e52a26b82c0cb6fade9e4cba57c5e7956ee1c",
+            "bin/macos-aarch64/oracle": "eee5a39778e6a95c508aab1e79321daa105f6731a8499b53de66aa89bc534125",
+            "bin/linux-x86_64/oracle": "5e53ff1e3f9ac5d939ec10ae7a240d3e47754e80105a9f736cb8c76221704913",
+            "bin/linux-aarch64/oracle": "6f7935818f60b0baf6b3e5647d87a68bd670c97bde732bae14cc7633650ac4b5"
+          },
+          "run": "bin/{platform}/oracle"
         }
       }
     }

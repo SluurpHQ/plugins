@@ -1,6 +1,6 @@
 {
   "name": "oracle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Oracle Database from server code: query, execute and transactions, NUMBER exact and DATE as dates. Pure Go, no Oracle client to install. Set ORACLE_URL=oracle://user:password@host:1521/service.",
   "run": "bin/{platform}/oracle",
   "sluurp": ">=0.2.0",
