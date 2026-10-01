@@ -1,0 +1,8 @@
+{
+  "name": "wordcount",
+  "version": "1.0.0",
+  "description": "An example of a plugin in Go compiled to WebAssembly: counts words, from server code or as an importable .words file.",
+  "main": "wordcount.ts",
+  "sluurp": ">=0.2.0",
+  "requires": {}
+}

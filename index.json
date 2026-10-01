@@ -12,6 +12,20 @@
           }
         }
       }
+    },
+    "wordcount": {
+      "description": "An example of a plugin in Go compiled to WebAssembly: counts words, from server code or as an importable .words file.",
+      "versions": {
+        "1.0.0": {
+          "sluurp": ">=0.2.0",
+          "requires": {},
+          "main": "wordcount.ts",
+          "files": {
+            "engine.wasm": "2d5fb41e3479517da1455c5beb45ddb636cd290f2b2f0b4a473824b70ace949b",
+            "wordcount.ts": "292dcbe41caa26bb0f22353ba4cfda3e97a3071af1253803540744d67ca62e57"
+          }
+        }
+      }
     }
   }
 }
