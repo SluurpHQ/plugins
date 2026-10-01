@@ -1,0 +1,8 @@
+{
+  "name": "kv",
+  "version": "1.0.0",
+  "description": "An example of a plugin that is a program, in Go: a key-value store with transactions, and its contents as an Arrow table.",
+  "run": "bin/{platform}/kv",
+  "sluurp": ">=0.2.0",
+  "requires": {}
+}

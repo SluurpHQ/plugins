@@ -40,6 +40,23 @@
           }
         }
       }
+    },
+    "kv": {
+      "description": "An example of a plugin that is a program, in Go: a key-value store with transactions, and its contents as an Arrow table.",
+      "versions": {
+        "1.0.0": {
+          "sluurp": ">=0.2.0",
+          "requires": {},
+          "main": "",
+          "files": {
+            "bin/windows-x86_64/kv.exe": "03fe30fd6a1d1772aebf722edeabe79ac0b3c7e962eded916074d60cae98daf7",
+            "bin/macos-aarch64/kv": "dfba0e948f99842c63d0ce97d7d3c457862c23066269ab30bff7e5875c4e43c9",
+            "bin/linux-x86_64/kv": "d1c7e79a2c34f9cce7e3dcd2867619a0dd0e477999ff0670e1350c214d4bf313",
+            "bin/linux-aarch64/kv": "b7a6e5d8259130e79c18e93f0cd5f6f39584d624609096f79db7c1460576fa34"
+          },
+          "run": "bin/{platform}/kv"
+        }
+      }
     }
   }
 }
