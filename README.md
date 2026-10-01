@@ -17,6 +17,14 @@ A plugin goes into the app's `plugins/<name>/` folder, and the app's `sluurp-plu
 | Plugin | What it does |
 |---|---|
 | `peppol` | Invoices as e-invoices in the Peppol BIS Billing 3.0 format (UBL 2.1, EN 16931), offered for issuers in countries that use Peppol |
+| `wordcount` | Example: Go compiled to WebAssembly, called from server code and importable as `.words` files |
+| `jseval` | Example: QuickJS built into WebAssembly with Rust, to run code the app doesn't trust with nothing but its input |
+| `kv` | Example: a program in Go, with transactions and Arrow tables (needs `SLUURP_NATIVE_PLUGINS=kv`) |
+
+## Plugins in other languages
+
+- **WebAssembly**: ship a `.wasm` with a small TypeScript file that imports it (`import engine from "./engine.wasm"`). See `wordcount` (Go, `GOOS=wasip1 GOARCH=wasm`) and `jseval` (Rust, `--target wasm32-wasip1`; QuickJS's C compiled with `zig cc`, see `jseval/src/zcc.mjs`).
+- **Programs**: `"run": "bin/{platform}/name"` in `plugin.json`, builds in `bin/linux-x86_64/`, `bin/linux-aarch64/`, `bin/macos-aarch64/`, `bin/windows-x86_64/`. They speak CBOR frames over stdin and stdout; `sdk/go` does that for Go plugins. Sources go in the plugin's `src/`, which isn't released.
 
 ## How it is laid out
 
