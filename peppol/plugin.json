@@ -1,0 +1,8 @@
+{
+  "name": "peppol",
+  "version": "1.0.0",
+  "description": "Invoices as e-invoices in the Peppol BIS Billing 3.0 format (UBL), for issuers in countries that use Peppol.",
+  "main": "peppol.ts",
+  "sluurp": ">=0.2.0",
+  "requires": {}
+}
