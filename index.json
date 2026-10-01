@@ -55,6 +55,18 @@
             "bin/linux-aarch64/kv": "b7a6e5d8259130e79c18e93f0cd5f6f39584d624609096f79db7c1460576fa34"
           },
           "run": "bin/{platform}/kv"
+        },
+        "1.0.1": {
+          "sluurp": ">=0.2.0",
+          "requires": {},
+          "main": "",
+          "files": {
+            "bin/windows-x86_64/kv.exe": "748a882970b05d8167ac9a33a02f6da598bf7ce9757968bbfc4aad1ee2cfac65",
+            "bin/macos-aarch64/kv": "efe1016e7ef785010df0d1c38295ee571fe477fc7df01fbf7029371bb100c8b3",
+            "bin/linux-x86_64/kv": "c0dea07afb865daf5e927f5201e11d1f0a16b955078e4fe3c059c339b0003821",
+            "bin/linux-aarch64/kv": "1fc6e7482eeb9c2e93772def9848fda3a192729005d491d862f4020db9ce6b17"
+          },
+          "run": "bin/{platform}/kv"
         }
       }
     },
