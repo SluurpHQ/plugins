@@ -61,7 +61,7 @@ type Arrow []byte
 
 var (
 	dec, _ = cbor.DecOptions{DefaultMapType: mapType}.DecMode()
-	enc, _ = cbor.CoreDetEncOptions().EncMode()
+	enc, _ = cbor.EncOptions{Time: cbor.TimeRFC3339Nano, TimeTag: cbor.EncTagRequired, BigIntConvert: cbor.BigIntConvertShortest}.EncMode()
 )
 
 // Event sends server code something it did not ask for: a change, a message on a channel.
