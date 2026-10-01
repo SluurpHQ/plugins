@@ -1,0 +1,8 @@
+{
+  "name": "jseval",
+  "version": "1.0.0",
+  "description": "An example of a plugin in Rust compiled to WebAssembly: QuickJS of its own, to run code the app does not trust with nothing but its input.",
+  "main": "jseval.ts",
+  "sluurp": ">=0.2.0",
+  "requires": {}
+}

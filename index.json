@@ -26,6 +26,20 @@
           }
         }
       }
+    },
+    "jseval": {
+      "description": "An example of a plugin in Rust compiled to WebAssembly: QuickJS of its own, to run code the app does not trust with nothing but its input.",
+      "versions": {
+        "1.0.0": {
+          "sluurp": ">=0.2.0",
+          "requires": {},
+          "main": "jseval.ts",
+          "files": {
+            "jseval.ts": "98af79948ff2662ac3f575260f661f68e446e59bf08f2ee2c9f71e7a1d604bfb",
+            "jseval.wasm": "285a4d2f364084db1df8c89bead04ce59f84500b683b27800d2edd703e476358"
+          }
+        }
+      }
     }
   }
 }
