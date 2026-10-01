@@ -57,6 +57,23 @@
           "run": "bin/{platform}/kv"
         }
       }
+    },
+    "oracle": {
+      "description": "Oracle Database from server code: query, execute and transactions, NUMBER exact and DATE as dates. Pure Go, no Oracle client to install. Set ORACLE_URL=oracle://user:password@host:1521/service.",
+      "versions": {
+        "1.0.0": {
+          "sluurp": ">=0.2.0",
+          "requires": {},
+          "main": "",
+          "files": {
+            "bin/windows-x86_64/oracle.exe": "117d69766ffed33ac88da9e1a2ae193b4fafc79f402f44b10a9e93aca3ee2e2e",
+            "bin/macos-aarch64/oracle": "e3b4610716b2bd5e42b2efe3f9964c9ddea25e080ad600bf9572ef71a5e5b61d",
+            "bin/linux-x86_64/oracle": "d5524596a891c76834e20082ef92c5974c06a5a996b6edb9f0d7d2999c251bd4",
+            "bin/linux-aarch64/oracle": "f90911d3f64a7367255805cea9d6dbfd20ab661c20c982becd05cb811acd86fe"
+          },
+          "run": "bin/{platform}/oracle"
+        }
+      }
     }
   }
 }
