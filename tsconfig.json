@@ -1,12 +1,13 @@
 {
-  "compilerOptions": {
-    "target": "ES2022",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "strict": true,
-    "noEmit": true,
-    "allowImportingTsExtensions": true,
-    "lib": ["ES2022"]
-  },
-  "include": ["types/*.d.ts", "*/**/*.ts"]
+  "//": "Sluurp's types for editors: `sluurp types` writes .sluurp/ (not committed), as a served app gets it.",
+  "extends": "./.sluurp/tsconfig.json",
+  "include": [
+    "types/*.d.ts",
+    "*/**/*.ts",
+    "*/**/*.tsx",
+    ".sluurp/types/sluurp-global.d.ts",
+    ".sluurp/types/sluurp-server.d.ts",
+    ".sluurp/types/vendored.d.ts"
+  ],
+  "exclude": [".sluurp/client", ".sluurp/vendored", "node_modules"]
 }
