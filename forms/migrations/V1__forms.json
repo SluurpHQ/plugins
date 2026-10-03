@@ -1,0 +1,11 @@
+{
+  "collections": [
+    {
+      "name": "_forms",
+      "schema": [
+        { "name": "name", "type": "text", "required": true, "unique": true },
+        { "name": "definition", "type": "json", "required": true }
+      ]
+    }
+  ]
+}
