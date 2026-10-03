@@ -1,0 +1,8 @@
+{
+  "name": "forms",
+  "version": "1.0.0",
+  "description": "Forms and polls: a form's answers kept in a collection of its own, checked on the server, with an admin screen.",
+  "main": "lib.ts",
+  "sluurp": ">=0.3.0",
+  "requires": {}
+}
