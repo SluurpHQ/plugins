@@ -1,0 +1,11 @@
+{
+  "//": "For an editor opened on this plugin alone: Sluurp's types, from the repository's .sluurp/ (sluurp types).",
+  "extends": "../.sluurp/tsconfig.json",
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "../.sluurp/types/sluurp-global.d.ts",
+    "../.sluurp/types/sluurp-server.d.ts",
+    "../.sluurp/types/vendored.d.ts"
+  ]
+}
