@@ -98,6 +98,24 @@
           "run": "bin/{platform}/oracle"
         }
       }
+    },
+    "forms": {
+      "description": "Forms and polls: a form's answers kept in a collection of its own, checked on the server, with an admin screen.",
+      "versions": {
+        "1.0.0": {
+          "sluurp": ">=0.3.0",
+          "requires": {},
+          "main": "lib.ts",
+          "files": {
+            "lib.ts": "f5363753fbfab1bf035b394fe188238bfcf21e7eeaa36df22f4d02f7741d6bf8",
+            "tests/forms.test.ts": "cfd3ee503c86ed43101d7b7572c54f6f5e7b365c3174ad80972ad51e7ab0a846",
+            "migrations/V1__forms.json": "b5b20203aba203ae5eb3951f19d17b86ee6e7218c75cdc93eeb2f00ff3882218",
+            "functions/form.ts": "f5779dc998663e7ece2b5e5f01206bb462eada2770c0964134d783cd3ccebb87",
+            "functions/results.ts": "481a7f0ec1d6756127cd2548dbe150eb41a2ed4953f0a1ca10f4bcb99e5d9571",
+            "admin/forms.tsx": "f6259940ff9c372cd989829f51bd57c98e1637a4a617e7ccb7493412ed9566d6"
+          }
+        }
+      }
     }
   }
 }
